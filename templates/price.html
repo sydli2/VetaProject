@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Current Price, Options, and Volatility</title>
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    <form action='/price',method="POST">
+
+    <ul>
+        {% for string in result %}
+            <li>{{ string }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+     <div class="link">
+    <a href="{{ url_for('my_form') }}">Try another symbol?</a>
+      </div>
+    </form>
+  </body>
+</html>
