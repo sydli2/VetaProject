@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
-
 
 import flask
 from flask import Flask, request, render_template,redirect,url_for
@@ -171,7 +169,6 @@ if __name__ == '__main__':
 # @app.route('/',methods=['POST'])
 
 
-# In[ ]:
 
 
 
