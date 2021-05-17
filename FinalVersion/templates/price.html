@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Current Price, Options, and Volatility</title>
+    
+      </head>
+      <body>
+      
+        <center>
+          <br>
+           <br>
+        {% for txt in result %}
+            <li>{{ txt }}</li>
+            <br>
+        {% endfor %}
+        
+  
+
+         <br>  
+         <br>
+        <img src="data:image/png;base64,{{ result2 }}" width="600" height="400" quality="95"\> 
+          <br>  
+         <br>
+        <div class="link">
+      <a href="http://localhost:5000/">Try another symbol?</a>
+      </div>
+       </center>
+
+      </body>
+</html>

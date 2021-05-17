@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check out option price</title>
+    <link rel="stylesheet" >
+  </head>
+  <body>
+    <center>
+
+    <form action= "http://localhost:5000/price", method="POST">
+        
+        Symbol:<br>
+        <p><input type="text" name="symbol" id="symbol"></p>
+        Try Microsoft symbol MSFT!<br>
+        Note: TSLA *recommended* to kill some time<br>
+        <br>
+        <br>
+        Option Expiration Time T:
+        <p><input type="text" name="expiration" id="expiration"></p>
+        If you want 3 month, enter 0.25<br>
+        <br>
+        <br>
+        Option Strike K:<br>
+        <p><input type="text" name="strike" id="strike"></p>
+        <p><input type="submit" value="submit" id="submit"></p>
+    </form>
+    </center>
+  </body>
+</html>
