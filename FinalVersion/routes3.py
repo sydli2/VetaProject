@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[11]:
+
 
 
 import flask
@@ -97,7 +97,7 @@ def get_vol_surface_2(symbol,S,r):
     for ind_T in range(len(option_dates)):
         df=quote.option_chain(option_dates[ind_T]).calls
         
-        if df.shape[0]==0:                            #if system says empty dataframe, go to the next iteration
+        if df.shape[0]==0:                            # if system says empty dataframe, go to the next iteration
             #print(option_dates[ind_T]+ "is skipped")
             continue
             
@@ -306,8 +306,6 @@ if __name__ == '__main__':
 
 # @app.route('/',methods=['POST'])
 
-
-# In[ ]:
 
 
 
